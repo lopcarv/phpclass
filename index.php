@@ -1,24 +1,20 @@
 <?php
-echo '<h1>Arquivo Index</h1>';
-echo "<h2>Texto dentro de aspas duplas</h2>";
+//Arquivo index responsavel pela inicializacao do sistema
+// declare(strict_types =1); restringir pelo tipo de dados
 
-print "<p>Texto usando print</p>";
-print "<small>Texto dentro de aspas duplas</small>";
-// Comentario de uma linha
+include_once 'sistema/configuracao.php';
+include_once 'helps.php';
 
-# comentario de uma linha
 
-/*
-multiplas linhas
-¯`v´¯) I Love My life
-`*.¸.*´ ?
-¸.•´¸.•*¨) ¸.•*¨)?
-(¸.•´ (¸.•´ .•´ ¸¸.•¨¯`•.
-(¯`v´¯)
-.`·.¸.·´ ?
-¸.·´¸.·´¨) ¸.·*¨)
-(¸.·´ (¸.·´ .·´ ¸
+echo saudacao();
 
-*/
+echo '<hr>';
 
-?>
+$texto = 'texto para resumir';
+
+var_dump($texto);
+echo '<hr>';
+echo saudacao();
+echo '<hr>';
+
+echo resumirTexto($texto, 150, 'continue');
