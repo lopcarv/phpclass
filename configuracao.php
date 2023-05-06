@@ -1,1 +1,1 @@
-configuracao
+configuração
